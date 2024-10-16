@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #b8b8b8;
+    margin: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #202C3F;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+body {
+    background-color: #F9FAFF;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    padding: 20px;
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #202C3F;
+}
+
+header div {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+header a {
+    color: #3B506F;
+}
+
+#action {
+    border: #D04848 2px solid;
+    padding: 10px;
+    border-radius: 20px;
+    color: #D04848;
+    transition: 1s;
+}
+
+#action:hover {
+    text-decoration: none;
+    background-color: #D04848;
+    color: #F9FAFF;
+    transition: 1s;
+}
+
+
+.heroObal {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    background-color: #3B506F;
+    width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+
+.hero:hover {
+    box-shadow: #b9bdd07c 2px 3px;
+    transition: 0.5s;
+}
+
+.hero div {
+    gap: 60px;
+}
+
+.hero div p {
+    font-size: 40px;
+    color: #F9FAFF;
+}
+
+h1 {
+    color: #F9FAFF;
+    font-size: 100px;
+}
+
+#imgHero {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 221px;
+    border-bottom-right-radius: 10px;
+}
+
+#redHero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 250px;
+    background-color: #D04848;
+    border-top-right-radius: 10px;
+}
+
+.about {
+    display: flex;
+    font-size: 25px;
+    margin-top: 70px;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about p {
+    width: 500px;
+}
+
+#aboutBlue {
+    padding: 30px 100px;
+    background-color: #F9FAFF;
+    color: #3B506F;
+    border: solid #3B506F 5px;
+    border-radius: 150px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    transition: transform 1s;
+    will-change: transform;
+}
+
+#aboutRed {
+    padding: 30px 100px;
+    background-color: #F9FAFF;
+    color: #D04848;
+    border: solid #D04848 5px;
+    border-radius: 150px;
+    width: 600px;
+    height: 400px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 1s;
+    will-change: transform;
+}
+
+#aboutBlue.animate {
+    transform: translateX(0);
+}
+
+#aboutRed.animate {
+    transform: translateX(0);
+}
+
+.program {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #202C3F;
+}
+
+#blok {
+    width: 30%;
+    height: 500px;
+    background-color: #3B506F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blok h2 {
+    font-size: 50px;
+    color: #F9FAFF;
+}
+
+.program .souhrn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.program div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.karta {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 400px;
+    height: 160px;
+    font-size: 15px;
+    color: #F9FAFF;
+}
+
+.karta img {
+    width: 76px;
+    height: 76px;
+}
+ 
+.podporovatele {
+    background-color: #F9FAFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.podporovatele h2 {
+    width: 70%;
+    background-color: #202C3F;
+    text-align: center;
+    padding: 20px;
+    color: #F9FAFF;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+.podporovatele div {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.podporovatele img {
+    width: 250px;
+    height: 250px;
+    background-color: #3B506F;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.akce {
+    background-color: #3B506F;
+    margin-top: 70px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.akce h2 {
+    color: #F9FAFF;
+    font-size: 50px;
+    text-align: center;
+}
+
+.akce article {
+    display: flex;
+    gap: 50px;
+}
+
+.card {
+    background-color: #3B506F;
+    border: solid 5px #F9FAFF;
+    width: 450px;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+.card:hover {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    transition: 0.5s;
+    box-shadow: #b9bdd07c 2px 3px;
+}
+
+.card h3 {
+    background-color: #F9FAFF;
+    text-align: center;
+    font-size: 35px;
+    color: #3B506F;
+    padding: 5px;
+}
+
+.card p {
+    padding: 40px 30px;
+    font-size: 27px;
+    color: #F9FAFF;
+}
+
+.pridatSe {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pridatSe div {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.pridatSe img {
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    box-shadow: #b9bdd07c 2px 3px;
+    transition: 0.5s;
+}
+
+.pridatSe img:hover, .pridatSe article:hover {
+    box-shadow: #c4a6a6 5px 5px;
+    transition: 0.5s;
+}
+
+.pridatSe h2 {
+    color: #F9FAFF;
+    font-size: 35px;
+    text-align: center;
+}
+
+.pridatSe article {
+    background-color: #D04848;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-around;
+    box-shadow: #b9bdd07c 2px 3px;
+    transition: 0.5s;
+}
+
+.pridatSe p {
+    width: 300px;
+    color: #F9FAFF;
+}
+
+.pridatSe .left-image {
+    transform: translateX(-100%);
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.pridatSe .left-image.animate {
+    transform: translateX(0);
+}
+
+.pridatSe .right-image {
+    transform: translateX(100%);
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.pridatSe .right-image.animate {
+    transform: translateX(0);
+}
+
+button {
+    background-color: transparent;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 15px;
+    color: #F9FAFF;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid #F9FAFF 3px;
+}
+
+button:hover {
+    background-color: #d0484869;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #202C3F;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer article {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer h2 {
+    color: #F9FAFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+footer article div {
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainText {
+    font-size: 25px;
+    color: #F9FAFF;
+}
+
+.copyFooter {
+    background-color: #3B506F;
+    color: #202C3F;
+    text-align: center;
+    width: 100%;
+}
+
+.copyFooter p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+input {
+    padding: 10px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    border-radius: 3px;
+    border: none;
+}
+
+input[type=button] {
+    background-color: #D04848;
+    border: none;
+    color: #F9FAFF;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+input[type=button]:hover {
+    background-color: #c4a6a6;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.podporovatele article {
+    background-color: #3B506F;
+    display: flex;
+    width: 800px;
+    border-radius: 10px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.podporovatele article #cervena {
+    background-color: #D04848;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+}
+
+.podporovatele article #cervena p {
+    width: 300px;
+    color: #F9FAFF;
+    font-size: 24px;
+    text-align: right;
+}
+
+.podporovatele article img {
+    border-radius: 0px;
+    left: 333px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 0;
+    border-bottom-right-radius: 10px;
+}
+
+.podporovatele #texty {
+    font-size: 34px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 470px;
+    top: 70px;
+}
+
+.podporovatele h3 {
+    color: #F9FAFF;
+}
+
+.podporovatele h4 {
+    color: #A8ABBD;
+}
+
+@media (max-width: 1505px) {
+    
+    .about {
+        gap: 25px;
+    }
+
+    .card {
+        width: 350px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    .card h3 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1460px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-image {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .program {
+        flex-direction: column;
+    }
+
+    .program #blok {
+        height: auto;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .program .souhrn {
+        gap: 60px;
+    }
+
+    .mainObal {
+        display: none;
+    }
+
+    .akce article {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:1100px) {
+    
+    .podporovatele img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .program .souhrn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .pridatSe img {
+        display: none;
+    }
+
+    #aboutBlue, #aboutRed {
+        padding: 15px;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #action {
+        display: none;
+    }
+
+    .podporovatele article {
+        width: 300px;
+    }
+
+    .podporovatele article #cervena {
+        width: 150px;
+        height: 170px;
+    }
+
+    .podporovatele article #cervena p {
+        width: 150px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .podporovatele article img {
+        width: 150px;
+        height: 150px;
+        bottom: 0;
+        left: 150px;
+    }
+
+    .podporovatele #texty {
+        display: none;
+    }
+
+    .hero {
+        width: 400px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero div p {
+        font-size: 25px;
+    }
+
+    #imgHero {
+        width: 150px;
+    }
+
+    #redHero {
+        height: 270px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        display: none;
+    }
+
+    .podporovatele img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #aboutRed, #aboutBlue {
+        padding: 0;
+        border: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #aboutRed, #aboutBlue {
+        font-size: 16px;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .hero {
+        width: 320px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero div p {
+        font-size: 17px;
+    }
+
+    #imgHero {
+        width: 80px;
+    }
+
+    #redHero {
+        height: 190px;
+        width: 20px;
+    }
+
+    #aboutRed p, #aboutBlue p {
+        width: 250px;
+    }
+
+    .karta {
+        font-size: 10px;
+        width: 250px;
+    }
+
+    .karta img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .podporovatele h2 {
+        font-size: 25px;
+    }
+
+    .podporovatele img {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .card {
+        width: 240px;
+    }
+
+    .card p {
+        padding: 20px 10px;
+    }
+
+    .pridatSe article {
+        width: 250px;
+        height: 250px;
+    }
+
+    .pridatSe p {
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .pridatSe h2 {
+        font-size: 25px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+}

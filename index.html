@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machovec 2028</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="icon.png" />
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+
+<body>
+    <header>
+        <div>
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 6.23963C0 2.79359 2.77814 0 6.20513 0H37.7949C41.2219 0 44 2.79359 44 6.23963V28.9292C44 32.3753 41.2219 35.1688 37.7949 35.1688H12.8869C12.0301 35.1688 11.2198 35.5605 10.6845 36.2332L5.42482 42.8443C3.6261 45.1053 0 43.8265 0 40.9309V6.23963ZM16.3161 19.2861C16.1853 19.4992 16.0312 19.7256 15.8513 19.9668C15.0914 20.9856 14.0562 22.0314 12.9059 23.1881C12.245 23.8526 12.245 24.9299 12.9059 25.5945C13.5668 26.2591 14.6383 26.2591 15.2992 25.5945L15.3479 25.5455C16.441 24.4464 17.6402 23.2407 18.559 22.0089C19.478 20.7766 20.3077 19.2741 20.3077 17.5844V13.0465C20.3077 10.8536 18.5398 9.07583 16.359 9.07583H14.1026C11.9218 9.07583 10.1538 10.8536 10.1538 13.0465V15.3155C10.1538 17.5084 11.9218 19.2861 14.1026 19.2861H16.3161ZM29.3897 19.9668C29.5696 19.7256 29.7239 19.4992 29.8546 19.2861H27.641C25.4602 19.2861 23.6923 17.5084 23.6923 15.3155V13.0465C23.6923 10.8536 25.4602 9.07583 27.641 9.07583H29.8974C32.0783 9.07583 33.8462 10.8536 33.8462 13.0465V17.5844C33.8462 19.2741 33.0165 20.7766 32.0974 22.0089C31.1786 23.2407 29.9796 24.4464 28.8863 25.5455L28.8376 25.5945C28.1767 26.2591 27.1054 26.2591 26.4445 25.5945C25.7836 24.9299 25.7836 23.8526 26.4445 23.1881C27.5948 22.0314 28.6298 20.9856 29.3897 19.9668Z"
+                    fill="#D04848" />
+            </svg>
+            <p>Machovec 2028</p>
+        </div>
+        <div>
+            <a href="#program">Program</a>
+            <a href="#akce">Akce</a>
+            <a href="" id="action">
+                Volte pro mě
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="heroObal">
+            <section class="hero">
+                <div>
+                    <h1>Machovec<br>2028</h1>
+                    <p>Důstojnost. Soudnost. Boj za čest.</p>
+                </div>
+                <div id="redHero"></div>
+                <img src="hero.png" alt="" id="imgHero">
+            </section>
+        </div>
+        <section class="about">
+            <article id="aboutBlue">
+                <h2>Něco o mně</h2>
+                <p>Jmenuji se Petr Machovec mladší a jsem kandidát na prezidenta České republiky od roku 2028. Dle
+                    průzkumů vedu nejtransparentnější kampaň současných voleb. Dost lidí by mou osobu popsalo mnoha
+                    slovy. Co je řečeno odlétá, co je napsáno zůstává. Něco tedy k mé minulosti.</p>
+            </article>
+            <article id="aboutRed">
+                <h2>Proč kandiduji?</h2>
+                <p>Rozhodl jsem se kandidovat, jelikož nejsem spokojen s aktuální (nejen) politickou situací České
+                    republiky. Myslím, že vláda ignoruje reálné problémy naší země a řeší pouze to nejvíce
+                    zmedializované. Chci přinést České republice důstojnost a čest, která se z naší vlasti pomalu
+                    vytrácí. </p>
+            </article>
+        </section>
+
+        <section class="program" id="program">
+            <div id="blok">
+                <h2>Program</h2>
+            </div>
+            <section class="souhrn">
+                <div>
+                    <article class="karta">
+                        <img src="finance.png" alt="">
+                        Když jde o finance, myslím, že by dobrým krokem bylo zrušit několik ministerstev. Ušetřili
+                        bychom tak stát o peníze, které by mohl věnovat jiným účelům. Jde o ministerstvo kultury,
+                        rozvoje a životního přostředí.
+                    </article>
+
+                    <article class="karta">
+                        <img src="school.png" alt="">
+                        Reforma školství je bez diskuze potřeba. V této době je digitalizace na prvním místě. Také by
+                        bylo potřeba zmodernit osnovy a upravit možnosti výběru předmětů. V neposlední řadě se musí
+                        mluvit o testování učitelů a praktičnosti vzdělání.
+                    </article>
+                </div>
+                <div>
+                    <article class="karta">
+                        <img src="people.png" alt="">
+                        Reforma sociálních dávek je potřebná a bylo by třeba zamezit zněužívání tohoto systému. Stejně
+                        tak reforma důchodů je téma, které by se mělo
+                        vložit do správných a hlavně schopných rukou. Na těchto reformách chci pracovat s odborníky,
+                        vládou i opozicí.
+                    </article>
+
+                    <article class="karta">
+                        <img src="law.png" alt="">
+                        Budu prosazovat legalizaci marihuany. Pokud by zákon prošel, podepsal
+                        bych amnestii pro občany s trestem vyšším jak pět let, který byl
+                        udělen za vlastnění/pěstování marihuany. Diskuze o zvýšení trestů za znásilnění je také velmi
+                        důležitá a podobný zákon bych podpořil.
+                    </article>
+                </div>
+            </section>
+        </section>
+        <section class="podporovatele">
+            <h2>Podporovatelé</h2>
+            <div>
+                <img src="podpo.png" alt="">
+                <img src="podpo2.png" alt="">
+                <img src="podpo3.png" alt="">
+            </div>
+            <div>
+                <img src="podpo4.png" alt="">
+                <img src="podpo5.png" alt="">
+                <img src="podpo6.png" alt="">
+            </div>
+            <article>
+                <div id="cervena">
+                    <p>„Nejhrajme si tu na boje o moc. Petr Machovec je jediný prezidentský kandidát, kterému nejde o
+                        moc ani
+                        peníze, ale o lid a
+                        Českou Republiku.“</p>
+                </div>
+                <div>
+                    <img src="fiala.png" alt="">
+                    <div id="texty">
+                        <h3>Petr Fiala</h3>
+                        <h4>Předseda vlády ČR</h4>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="akce" id="akce">
+            <h2>Plánované akce</h2>
+            <article>
+                <div class="card">
+                    <h3>Diskuze v Praze 9.5.</h3>
+                    <p>Diskutovat s ostatními je důležité. Přijďte 9.5. do Prahy a setkejme se v 17 hodin!</p>
+                </div>
+                <div class="card">
+                    <h3>Setkání v Olomouci 16.5.</h3>
+                    <p>Setkejme se v Olomouci na akci mých podporovatelů. Nepřipravte se o možnost probrat problémy ČR.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Sjezd ODS 23.5.</h3>
+                    <p>I když nekandiduji za ODS, jsem pořád součástí této strany. Sjezd je přístupný veřejnosti a rád
+                        vás uvidím.</p>
+                </div>
+            </article>
+        </section>
+        <section class="pridatSe">
+            <div>
+                <img class="left-image" src="crowd.png" alt="">
+                <article>
+                    <h2>Přidejte se k podporovatelům!</h2>
+                    <p>Chcete mě podpořit? Pomáhat s kampaní? Spolupracovat se mnou a mým týmem? Není jednodušší cesta,
+                        než být mým podporovatelem. Společně se můžeme vydat na zajímavou a obohacující cestu, kterou si
+                        neužijete pouze vy, ale i já. Je čas začít psát historii.
+                    </p>
+                    <button>Přidejte se...</button>
+                </article>
+                <img class="right-image" src="crowd2.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <article class="mainObal">
+            <p class="mainText">
+                Petr Machovec prezidentem. Důstojnost. Soudnost. Boj za čest.<br>
+            </p>
+        </article>
+        <article>
+            <h2>Odebírejte novinky</h2>
+            <form>
+                <input type="text" placeholder="vasmail.example.com">
+                <input type="button" value="Přihlásit se k odběru">
+            </form>
+        </article>
+        <article>
+            <h2>Sledujte mě na sociálních sítích</h2>
+            <div>
+                <a href="https://www.facebook.com/petr.machovec.967"><img src="facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/hlavni_postava_hlinska"><img src="instagram.png" alt=""></a>
+                <a href="https://twitter.com/ratf_cker"><img src="twitter.png" alt=""></a>
+            </div>
+        </article>
+    </footer>
+    <div class="copyFooter">
+        <p>Copyright © 2024 Petr Machovec. Všechna práva vyhrazena.</p>
+    </div>
+    <script>
+        var controller = new ScrollMagic.Controller();
+
+        var scene1 = new ScrollMagic.Scene({
+            triggerElement: '#aboutBlue',
+            triggerHook: 0.8,
+            reverse: true,
+            duration: '100%'
+        })
+            .setClassToggle('#aboutBlue', 'animate')
+            .addTo(controller);
+
+        var scene2 = new ScrollMagic.Scene({
+            triggerElement: '#aboutRed',
+            triggerHook: 0.8,
+            reverse: true,
+            duration: '100%'
+        })
+            .setClassToggle('#aboutRed', 'animate')
+            .addTo(controller);
+
+        var controller2 = new ScrollMagic.Controller();
+
+        var scene3 = new ScrollMagic.Scene({
+            triggerElement: '.pridatSe',
+            triggerHook: 0.8,
+            reverse: true,
+            duration: '100%'
+        })
+            .setClassToggle('.left-image', 'animate')
+            .addTo(controller2);
+
+        var scene4 = new ScrollMagic.Scene({
+            triggerElement: '.pridatSe',
+            triggerHook: 0.8,
+            reverse: true,
+            duration: '100%'
+        })
+            .setClassToggle('.right-image', 'animate')
+            .addTo(controller2);
+    </script>
+
+
+</body>
+
+</html>
